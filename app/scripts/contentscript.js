@@ -18,12 +18,11 @@ window.addEventListener('load', function(){
     myDirective.setAttribute('my-directive', '');
     document.querySelector('.jsb center').appendChild(myDirective);
 
-    app.directive('myDirective', function(){
+    app.directive('myDirective', function($sce){
         return {
             restrict: 'EA',
             replace: true,
-            template: '<input value="DuckDuckGo Search" aria-label="DuckDuckGo Search" name="btnD" type="submit">'
-            //<a href="https://duckduckgo.com/">DuckDuckGo Search</a>'
+            templateUrl: $sce.trustAsResourceUrl(chrome.extension.getURL('/templates/button.html'))
         };
     });
 
