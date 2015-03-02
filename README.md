@@ -1,7 +1,7 @@
 # chrome-extension-demo
 Chrome Extension Demo
 
-Ducker is an extra button that appear on Google and let you search on DuckDuckGo!
+Ducker is an extra button that appears on Google and let you search on DuckDuckGo!
 
 ![Capture](https://raw.githubusercontent.com/cortezcristian/chrome-extension-demo/master/app/images/capture.png)
 
