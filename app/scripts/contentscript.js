@@ -18,5 +18,13 @@ window.addEventListener('load', function(){
     myDirective.setAttribute('my-directive', '');
     viewport.appendChild(myDirective);
 
+    app.directive('myDirective', function(){
+        return {
+            restrict: 'EA',
+            replace: true,
+            template: '<a href="https://duckduckgo.com/">DuckDuckGo Search</a>'
+        };
+    });
+
     angular.bootstrap(html, ['Ducked'], []);
 });
