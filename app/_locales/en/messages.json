@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "chrometest",
-    "description": "The name of the application"
+    "message": "Ducker",
+    "description": "Search on DuckDuckGo for you"
   },
   "appDescription": {
-    "message": "Simple example",
-    "description": "The description of the application"
+    "message": "Duck Search",
+    "description": "Search on DuckDuckGo for you"
   }
 }
