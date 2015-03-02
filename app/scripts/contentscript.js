@@ -16,13 +16,14 @@ window.addEventListener('load', function(){
 
     var myDirective = document.createElement('div');
     myDirective.setAttribute('my-directive', '');
-    viewport.appendChild(myDirective);
+    document.querySelector('.jsb center').appendChild(myDirective);
 
     app.directive('myDirective', function(){
         return {
             restrict: 'EA',
             replace: true,
-            template: '<a href="https://duckduckgo.com/">DuckDuckGo Search</a>'
+            template: '<input value="DuckDuckGo Search" aria-label="DuckDuckGo Search" name="btnD" type="submit">'
+            //<a href="https://duckduckgo.com/">DuckDuckGo Search</a>'
         };
     });
 
